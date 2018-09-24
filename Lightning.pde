@@ -1,7 +1,7 @@
-int startX = 0;
-int startY = 150;
-int endX = 0;
-int endY = 150;
+int startX = 10;
+int startY = 100;
+int endX = 10;
+int endY = 100;
 
 void setup()
 {
@@ -12,6 +12,8 @@ stroke(255,255,255);
 }
 void draw()
 {
+rect(25,75,50,40);
+rect(0,100,50,150);
 stroke((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
 
 	while (startX<300)
@@ -28,6 +30,6 @@ void mousePressed()
 {
 	startX = 0;
 	endX = 50;
-	startY=50;
-	endY = 50;	
+	startY=100;
+	endY = 100;	
 }
